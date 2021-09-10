@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>booking_list</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="css/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+        <!--        <link href="css/fullcalendar.print.min.css" rel="stylesheet" type="text/css"/>-->
+        <link href="css/ionicons.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="herwardrobe">
+            <div class="custom_container">
+                <div class="herwardrobe_title">
+                    <h3>Rental Dress App</h3>
+                </div>
+            </div>
+            <div class="header">  
+                <div class="custom_container">
+                    <div class="header_section">
+                        <div class="header_logo">
+                            <a href="dashboard.html"><img src="images/logo.png" alt=""/></a>
+                        </div>
+                        <div class="header_menu">                     
+                            <div class="navigation_menu">
+                                <ul>
+                                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                                    <li class="active"><a href="booking_list.html">BOOKINGS</a></li>
+                                    <li><a href="product_listing.html">PRODUCTS</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="runsheet_list.html">RUNSHEET SETTINGS</a></li>
+                                    <li><a href="blockout.html">BLOCKOUT</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="add_postalcode.html">MORE</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="#">MANAGE DELIVERY DAY WISE POSTAL CODE</a></li>                                           
+                                        </ul></li>   
+                                </ul>                            
+                            </div>
+                        </div>
+                        <div class="header_btn">
+                            <div class="notification">
+                                <a href="#"><i class="fa fa-bell"></i> <span class="notify"></span></a>
+                            </div>
+                            <div class="setting_icon">
+                                <a href="#"><i class="fa fa-gear"></i>SETTINGS</a>
+                            </div>
+                        </div>
+                        <div class="mobile_menu">
+                            <div class="toggle_menu">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                            <div class="navigation_menu" style="display: none;">
+                                <ul>
+                                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                                    <li><a href="booking_list.html">BOOKINGS</a></li>
+                                    <li><a href="product_listing.html">PRODUCTS</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="runsheet_list.html">RUNSHEET SETTINGS</a></li>
+                                    <li><a href="blockout.html">BLOCKOUT</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="add_postalcode.html">MORE</a><span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="#">MANAGE DELIVERY DAY WISE POSTAL CODE</a></li>                                           
+                                        </ul>
+                                    </li>   
+                                </ul>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>    
+            <div class="breadcrumb_section">
+                <div class="custom_container">
+                    <div class="product_title">
+                        <h4>Bookings</h4>
+                    </div>
+                    <div class="breadcrumb_area">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li>Bookings</li>
+                        </ul>
+                    </div>
+                </div>               
+            </div>
+            <div class="filter_calender">
+                <div class="custom_container">                   
+                    <div class="filter_section book_form">
+                        <div class="filter">
+                            <h5>FILTER</h5>
+                        </div>
+                        <div class="dashboard_form">
+                            <form>   
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <label for="from">Booking Start From</label>
+                                        <input type="text" id="from" name="from" class="form_txt date_text" placeholder="Select">
+                                        <label for="to" class="date_pick">To</label>
+                                        <input type="text" id="to" name="to" class="form_txt date_text" placeholder="Select">
+                                    </div>
+                                    <div class="form_col">
+                                        <label>Customer Name</label> 
+                                        <input type="text" placeholder="Enter name" class="form_txt"> 
+                                    </div>
+                                    <div class="form_col">
+                                        <label>Order Number</label> 
+                                        <input type="number" placeholder="Enter number" class="form_txt"> 
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <label>Product Name</label>
+                                        <input type="text" placeholder="Select product" class="form_txt">
+                                    </div>
+                                    <div class="form_col">
+                                        <label>Variant</label>
+                                        <select class="checkout_select_dropdown">
+                                            <option value="0">Select Variant </option>
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_col">
+                                        <label>Status</label> 
+                                        <input type="text" placeholder="Select status" class="form_txt">                                
+                                    </div>
+                                </div>  
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <label>Sort By</label> 
+                                        <select class="checkout_select_dropdown">
+                                            <option value="0">Start Date </option>                                         
+                                        </select>
+                                    </div>
+                                    <div class="form_col">
+                                        <label></label> 
+                                        <select class="checkout_select_dropdown">
+                                            <option value="0">Earlier First</option>                                         
+                                        </select> 
+                                    </div> 
+                                    <div class="form_col"></div>
+                                </div>
+                                <div class="form_col_btn">
+                                    <input type="reset" class="reset_btn" value="RESET">
+                                    <button class="search_btn">SEARCH</button>        
+                                </div>
+                            </form>
+                        </div>                   
+                    </div>
+                    <div class="product_section">
+                        <div class="filter booking_title">
+                            <h5>Booking(s)</h5>
+                            <a class="add_rent" href="#">Create New Booking</a>
+                        </div>                  
+                        <div class="product_table booking_table">
+                            <div class="table">
+                                <div class="thead">
+                                    <div class="tr">
+                                        <div class="th"><label class="custom_checkbox"><input type="checkbox" id="checkAll"><span class="checkmark"></span></label></div>
+                                        <div class="th">Booking ID</div>
+                                        <div class="th">Product</div>
+                                        <div class="th">Created</div>
+                                        <div class="th">Customer Name</div>
+                                        <div class="th">Rental Period</div>
+                                        <div class="th">Booking From</div>
+                                        <div class="th">Booking To</div>
+                                        <div class="th">Status</div>
+                                        <div class="th">Action</div>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr view_tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">1011759</div>
+                                        <div class="td" data-title="Product"><div class="table-text"><h6>Natasha Ball Mesh Pod</h6><p>Colour<span>-Rose Glod</span>Rental Period<span>-4-Day</span></p></div></div>
+                                        <div class="td" data-title="Created">26 May 12:55</div>
+                                        <div class="td" data-title="Customer Name">Steph Lamb</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">29 May</div>
+                                        <div class="td" data-title="Booking To">04 Jun</div>
+                                        <div class="td unfill" data-title="Status"><p>Unfulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/>
+                                            </a>
+                                            <a href="javascript:void(0);" class="view_btn ion-chevron-down"></a>
+                                        </div>
+                                    </div>                                   
+                                    <div class="tr inner_table">
+                                        <div class="book_table">
+                                            <div class="main_table">
+                                                <div class="tr view_tr">
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td inner_width" data-title="Product"><h6>We Could Be Friends Dress</h6><p>Size<span>- 6</span>Colour<span>Pink</span>Rental Period<span>-4-Day</span></p></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                    <div class="tr view_tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">1010457</div>
+                                        <div class="td rent_text" data-title="Product"><div class="table-text"><h6>Babylon Lace Dress</h6><p>Size<span>-8</span>Colour<span>- Emerald Green</span>Rental Period<span>-4-Day</span></p>+ 10 more</div></div>
+                                        <div class="td" data-title="Created">25 May 12:45</div>
+                                        <div class="td" data-title="Customer Name">FINE LINES</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">30 May</div>
+                                        <div class="td" data-title="Booking To">09 Jun</div>
+                                        <div class="td unfill" data-title="Status"><p>Unfulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/></a>
+                                            <a href="javascript:void(0);" class="view_btn ion-chevron-down"></a></div>
+                                    </div>
+                                    <div class="tr inner_table">
+                                        <div class="book_table">
+                                            <div class="main_table">
+                                                <div class="tr view_tr">
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td inner_width" data-title="Product"><h6>We Could Be Friends Dress</h6><p>Size<span>- 6</span>Colour<span>Pink</span>Rental Period<span>-4-Day</span></p></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tr view_tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">1007875</div>
+                                        <div class="td rent_text" data-title="Product"><div class="table-text"><h6>Jasmine Woven Metallic Pod</h6><p>Colour<span>Gold</span>Rental Period<span>4-Day</span></p>+ 2 more</div></div>
+                                        <div class="td" data-title="Created">23 May 15:14</div>
+                                        <div class="td" data-title="Customer Name">Lukanda Ellis</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">25 May</div>
+                                        <div class="td" data-title="Booking To">31 May</div>
+                                        <div class="td fill" data-title="Status"><p>Fulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/></a>
+                                            <a href="javascript:void(0);" class="view_btn ion-chevron-down"></a></div>
+                                    </div>                                   
+                                    <div class="tr inner_table">
+                                        <div class="book_table">
+                                            <div class="main_table">
+                                                <div class="tr view_tr">
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td inner_width" data-title="Product"><h6>We Could Be Friends Dress</h6><p>Size<span>- 6</span>Colour<span>Pink</span>Rental Period<span>-4-Day</span></p></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">1006362</div>
+                                        <div class="td" data-title="Product"><div class="table-text"><h6>Mexicali Embroidered Dress</h6><p>Size<span>- 12</span>Colour<span>- Red</span>Rental Period<span>-4-Day</span></p></div></div>
+                                        <div class="td" data-title="Created">22 May 16:25</div>
+                                        <div class="td" data-title="Customer Name">Katherine Hughes</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">25 May</div>
+                                        <div class="td" data-title="Booking To">31 May</div>
+                                        <div class="td fill" data-title="Status"><p>Fulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/>
+                                            </a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">1004889</div>
+                                        <div class="td" data-title="Product"><div class="table-text"><h6>Georgette Pleated Crepe Midi Dress</h6><p>Size<span>- 8</span>Colour<span>- Green</span>Rental Period<span>-4-Day</span></p></div></div>
+                                        <div class="td" data-title="Created">21 May 12:53</div>
+                                        <div class="td" data-title="Customer Name">Claudine Kraljevic</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">25 May</div>
+                                        <div class="td" data-title="Booking To">31 May</div>
+                                        <div class="td fill" data-title="Status"><p>Fulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/>
+                                            </a></div>
+                                    </div>
+                                    <div class="tr view_tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">999099</div>
+                                        <div class="td rent_text" data-title="Product"><div class="table-text"><h6>Amelia Gown</h6><p>Size<span>- 8</span>Colour<span>- Black</span>Rental Period<span>-4-Day</span></p>+ 1 more</div></div>
+                                        <div class="td" data-title="Created">16 May 12:36</div>
+                                        <div class="td" data-title="Customer Name">Elaine Kwan</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">28 May</div>
+                                        <div class="td" data-title="Booking To">03 Jun</div>
+                                        <div class="td fill" data-title="Status"><p>Fulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/></a>
+                                            <a href="javascript:void(0);" class="view_btn ion-chevron-down"></a></div>
+                                    </div>
+
+                                    <div class="tr inner_table">
+                                        <div class="book_table">
+                                            <div class="main_table">
+                                                <div class="tr view_tr">
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td inner_width" data-title="Product"><h6>We Could Be Friends Dress</h6><p>Size<span>- 6</span>Colour<span>Pink</span>Rental Period<span>-4-Day</span></p></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">997619</div>
+                                        <div class="td" data-title="Product"><div class="table-text"><h6>Pursue Midi Dress</h6><p>Size<span>- XL</span>Colour<span>- Black</span>Rental Period<span>-4-Day</span></p></div></div>
+                                        <div class="td" data-title="Created">15 May 09:46</div>
+                                        <div class="td" data-title="Customer Name">Mikhaela Llewellyn</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">29 May</div>
+                                        <div class="td" data-title="Booking To">05 Jun</div>
+                                        <div class="td fill" data-title="Status"><p>Fulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/>
+                                            </a></div>
+                                    </div>
+                                    <div class="tr view_tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">993066</div>
+                                        <div class="td rent_text" data-title="Product"><div class="table-text"><h6>Chameleon Mini Dress</h6><p>Size<span>- 12</span>Colour<span>- Lemon</span>Rental Period<span>-8-Day</span></p>+ 1 more</div></div>
+                                        <div class="td" data-title="Created">11 May 17:40</div>
+                                        <div class="td" data-title="Customer Name">Ebony Scott</div>
+                                        <div class="td" data-title="Rental Period">8 Days</div>
+                                        <div class="td" data-title="Booking From">28 May</div>
+                                        <div class="td" data-title="Booking To">10 Jun</div>
+                                        <div class="td fill" data-title="Status"><p>Fulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/></a>
+                                            <a href="javascript:void(0);" class="view_btn ion-chevron-down"></a></div>
+                                    </div>                               
+                                    <div class="tr inner_table">
+                                        <div class="book_table">
+                                            <div class="main_table">
+                                                <div class="tr view_tr">
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td inner_width" data-title="Product"><h6>We Could Be Friends Dress</h6><p>Size<span>- 6</span>Colour<span>Pink</span>Rental Period<span>-4-Day</span></p></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">991283</div>
+                                        <div class="td" data-title="Product"><div class="table-text"><h6>Reminisce Long Sleeve Mini Dress</h6><p>Size<span>- S</span>Colour<span>- White</span>Rental Period<span>-4-Day</span></p></div></div>
+                                        <div class="td" data-title="Created">10 May 12:45</div>
+                                        <div class="td" data-title="Customer Name">Mikhaela Llewellyn</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">30 May</div>
+                                        <div class="td" data-title="Booking To">05 Jun</div>
+                                        <div class="td unfill" data-title="Status"><p>Unfulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/>
+                                            </a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td" data-title="checkbox"><label class="custom_checkbox"><input type="checkbox" class="checkItem"><span class="checkmark"></span></label></div>
+                                        <div class="td" data-title="Booking ID">990274</div>
+                                        <div class="td" data-title="Product"><div class="table-text"><h6>Hamptons Mini Bow Dress</h6><p>Size<span>-10</span>Colour<span>- Navy</span>Rental Period<span>-4-Day</span></p></div></div>
+                                        <div class="td" data-title="Created">09 May 21:24</div>
+                                        <div class="td" data-title="Customer Name">Krystal Spittal</div>
+                                        <div class="td" data-title="Rental Period">4 Days</div>
+                                        <div class="td" data-title="Booking From">31 May</div>
+                                        <div class="td" data-title="Booking To">06 Jun</div>
+                                        <div class="td unfill" data-title="Status"><p>Unfulfilled</p></div>
+                                        <div class="td" data-title="Action"><a href="#">
+                                                <img src="images/eye.png" alt=""/>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table_pagination">
+                                <div class="left_text">
+                                    <p>Displaying 1 - 10 of 78 records</p>
+                                </div>
+                                <div class="pagination">
+                                    <ul class="right_pagination">
+                                        <li class="page_item active"><a href="javascript:void(0);">1</a></li>
+                                        <li class="page_item"><a href="javascript:void(0);">2</a></li>
+                                        <li class="page_item"><a href="javascript:void(0);">3</a></li>
+                                        <li class="page_item arrow"><a href="javascript:void(0);"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/moment.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </body>
+</html>

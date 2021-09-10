@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>common_setting</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+        <!--        <link href="css/fullcalendar.print.min.css" rel="stylesheet" type="text/css"/>-->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="herwardrobe">
+            <div class="custom_container">
+                <div class="herwardrobe_title">
+                    <h3>Rental Dress App</h3>
+                </div>
+            </div>
+            <div class="header">  
+                <div class="custom_container">
+                    <div class="header_section">
+                        <div class="header_logo">
+                            <a href="dashboard.html"><img src="images/logo.png" alt=""/></a>
+                        </div>
+                        <div class="header_menu">                     
+                            <div class="navigation_menu">
+                                <ul>
+                                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                                    <li><a href="booking_list.html">BOOKINGS</a></li>
+                                    <li><a href="product_listing.html">PRODUCTS</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="runsheet_list.html">RUNSHEET SETTINGS</a></li>
+                                    <li><a href="blockout.html">BLOCKOUT</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="add_postalcode.html">MORE</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="#">MANAGE DELIVERY DAY WISE POSTAL CODE</a></li>                                           
+                                        </ul></li>   
+                                </ul>                            
+                            </div>
+                        </div>
+                        <div class="header_btn">
+                            <div class="notification">
+                                <a href="#"><i class="fa fa-bell"></i> <span class="notify"></span></a>
+                            </div>
+                            <div class="setting_icon">
+                                <a href="#"><i class="fa fa-gear"></i>SETTINGS</a>
+                            </div>
+                        </div>
+                        <div class="mobile_menu">
+                            <div class="toggle_menu">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                            <div class="navigation_menu" style="display: none;">
+                                <ul>
+                                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                                    <li><a href="booking_list.html">BOOKINGS</a></li>
+                                    <li><a href="product_listing.html">PRODUCTS</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="runsheet_list.html">RUNSHEET SETTINGS</a></li>
+                                    <li><a href="blockout.html">BLOCKOUT</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="add_postalcode.html">MORE</a><span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="#">MANAGE DELIVERY DAY WISE POSTAL CODE</a></li>                                           
+                                        </ul>
+                                    </li>   
+                                </ul>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>     
+            <div class="breadcrumb_section">
+                <div class="custom_container">
+                    <div class="product_title">
+                        <h4>Apply Common Settings</h4>
+                    </div>
+                    <div class="breadcrumb_area">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Bookable products</a></li>
+                            <li>Apply common settings</li>
+                        </ul>
+                    </div>
+                </div>               
+            </div>
+            <div class="filter_calender">
+                <div class="custom_container">
+                    <div class="product_section">
+                        <div class="filter">
+                            <h5>Apply Common Settings on Selected Products</h5>
+                            <a class="add_rent" href="#">ADD TO RENT</a>                        
+                        </div>
+                        <div class="filter_section common_form">
+                            <form>
+                                <div class="form_row common_row">
+                                    <div class="form_col radio common_radio">
+                                        <p>Type</p>
+                                        <label for="radio1" class="container_radio">Days
+                                            <input type="radio"  class="radio_one" id="radio1" value="" name="radio" checked="">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label for="radio2" class="container_radio">Time
+                                            <input type="radio" class="radio_one" id="radio2" value=""  name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> 
+                                    <div class="form_col quantity_btn common_set">
+                                        <label for="from">Lead Time </label>
+                                        <div  class="quantity_no">
+                                            <input type="number" class="form_txt">                                                
+                                        </div>
+                                    </div>         
+                                    <div class="form_col quantity_btn common_set1">
+                                        <label for="from">Lag Time  </label>
+                                        <div class="lag_period1">
+                                            <label class="lag_time">Postage</label>
+                                            <div class="quantity_no">    <input type="number" class="form_txt">  </div>
+                                        </div>                             
+                                    </div> 
+                                    <div class="form_col quantity_btn common_set2">
+                                        <label for="from"></label>
+                                        <div class="lag_period">
+                                            <label class="lag_time">Dry cleaning</label>
+                                            <div class="quantity_no">  <input type="number" class="form_txt">  </div>
+
+                                        </div>                             
+                                    </div>  
+                                    <div class="form_col quantity_btn common_set3">
+                                        <label for="from">Quantity</label>
+                                        <div class="quantity_no">
+                                            <input type="number" class="form_txt">                                                  
+                                        </div>                             
+                                    </div>
+                                    <div class="form_col rentalP common_set4">
+                                        <div class="show">
+                                            <p>Rental Periods</p>
+                                            <div class="bookings">
+                                                <label class="showbox">4 Days 
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="blockouts">
+                                                <label class="showbox">8 Days
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_col_btn">
+                                        <input type="reset" class="reset_btn" value="CLEAR">
+                                        <button class="search_btn">Save</button>        
+                                    </div>
+                                </div>                              
+                            </form>
+                        </div>                   
+                        <div class="product_table common_table">
+                            <div class="form_row">
+                                <div class="form_colp2"> 
+                                    <input type="search" placeholder="Search product" class="form_txt">  
+                                    <button class="search_btn">SEARCH</button> 
+                                </div>
+                            </div>
+                            <div class="table">
+                                <div class="thead">
+                                    <div class="tr">                                       
+                                        <div class="th">Product Image</div>
+                                        <div class="th">Product Name</div>
+                                        <div class="th">Collection</div>
+                                        <div class="th">Capacity(QTY)</div>
+                                        <div class="th">Variants</div>                                      
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr">
+                                        <div class="td" data-title="Product Image">
+                                            <div class="product_img">
+                                                <img src="images/product_img2.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="td" data-title="Product Name">Ace Crystal Pod - Rose Gold</div>
+                                        <div class="td" data-title="Collection">Clutch</div>
+                                        <div class="td" data-title="Capacity(QTY)">1</div>
+                                        <div class="td" data-title="Variants">2</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td" data-title="Product Image">
+                                            <div class="product_img">
+                                                <img src="images/product_img3.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="td" data-title="Product Name">Ace Crystal Pod - Silver</div>
+                                        <div class="td" data-title="Collection">Clutch</div>
+                                        <div class="td" data-title="Capacity(QTY)">1</div>
+                                        <div class="td" data-title="Variants">2</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td" data-title="Product Image">
+                                            <div class="product_img">
+                                                <img src="images/product_img4.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="td" data-title="Product Name">Aegean Mini Dress - Indigo</div>
+                                        <div class="td" data-title="Collection">Dress, Designers</div>
+                                        <div class="td" data-title="Capacity(QTY)">1 - 2</div>
+                                        <div class="td" data-title="Variants">10</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td" data-title="Product Image">
+                                            <div class="product_img">
+                                                <img src="images/product_img7.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="td" data-title="Product Name">Aigino</div>
+                                        <div class="td" data-title="Collection">Millinery</div>
+                                        <div class="td" data-title="Capacity(QTY)">1</div>
+                                        <div class="td" data-title="Variants">2</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td" data-title="Product Image">
+                                            <div class="product_img">
+                                                <img src="images/product_img9.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="td" data-title="Product Name">Ally Metal Framed Pod</div>
+                                        <div class="td" data-title="Collection">Clutch</div>
+                                        <div class="td" data-title="Capacity(QTY)">1</div>
+                                        <div class="td" data-title="Variants">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </div>   
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/moment.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </body>
+</html>

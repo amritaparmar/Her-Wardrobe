@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>addseasonal_product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="css/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+        <!--        <link href="css/fullcalendar.print.min.css" rel="stylesheet" type="text/css"/>-->
+        <link href="css/ionicons.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="herwardrobe">
+            <div class="custom_container">
+                <div class="herwardrobe_title">
+                    <h3>Rental Dress App</h3>
+                </div>
+            </div>
+            <div class="header">  
+                <div class="custom_container">
+                    <div class="header_section">
+                        <div class="header_logo">
+                            <a href="dashboard.html"><img src="images/logo.png" alt=""/></a>
+                        </div>
+                        <div class="header_menu">                     
+                            <div class="navigation_menu">
+                                <ul>
+                                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                                    <li><a href="booking_list.html">BOOKINGS</a></li>
+                                    <li class="active"><a href="product_listing.html">PRODUCTS</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="runsheet_list.html">RUNSHEET SETTINGS</a></li>
+                                    <li><a href="blockout.html">BLOCKOUT</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="add_postalcode.html">MORE</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="#">MANAGE DELIVERY DAY WISE POSTAL CODE</a></li>                                           
+                                        </ul></li>   
+                                </ul>                            
+                            </div>
+                        </div>
+                        <div class="header_btn">
+                            <div class="notification">
+                                <a href="#"><i class="fa fa-bell"></i> <span class="notify"></span></a>
+                            </div>
+                            <div class="setting_icon">
+                                <a href="#"><i class="fa fa-gear"></i>SETTINGS</a>
+                            </div>
+                        </div>
+                        <div class="mobile_menu">
+                            <div class="toggle_menu">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                            <div class="navigation_menu" style="display: none;">
+                                <ul>
+                                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                                    <li><a href="booking_list.html">BOOKINGS</a></li>
+                                    <li><a href="product_listing.html">PRODUCTS</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="runsheet_list.html">RUNSHEET SETTINGS</a></li>
+                                    <li><a href="blockout.html">BLOCKOUT</a>
+                                        <span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="product_listing.html">ALL PRODUCTS</a></li>
+                                            <li><a href="#">RENTAL PRODUCTS</a></li>
+                                            <li><a href="addseasonal_product.html">SEASONAL PRODUCTS MANAGEMENT</a></li>
+                                            <li><a href="#">BACKUP PRODUCTS MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="add_postalcode.html">MORE</a><span class="drop_icon"><i class="fa fa-caret-down"></i></span>
+                                        <ul class="dropbtn">
+                                            <li><a href="#">MANAGE DELIVERY DAY WISE POSTAL CODE</a></li>                                           
+                                        </ul>
+                                    </li>   
+                                </ul>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>     
+            <div class="breadcrumb_section">
+                <div class="custom_container">
+                    <div class="product_title">
+                        <h4>Seasonal Products Management</h4>
+                    </div>
+                    <div class="breadcrumb_area">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products </a></li>
+                            <li>Seasonal Products Management</li>
+                            <li>Add Seasonal Product</li>
+                        </ul>
+                    </div>
+                </div>               
+            </div>
+            <div class="filter_calender">
+                <div class="custom_container">                   
+                    <div class="book_form">
+                        <div class="filter">
+                            <h5>Add Seasonal Product</h5>
+                        </div>
+                        <div class="dashboard_form seasonal_form">
+                            <form>  
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <label>Collection</label>
+                                        <select class="checkout_select_dropdown">
+                                            <option value="0">Millinery </option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>                                    
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_col">                                      
+                                        <div class="label_info">
+                                            <label>Product Name</label>
+                                            <div class="info_img">
+                                                <img src="images/green_info.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="seasonal_heading">
+                                            <p>Selected products are bookable only for below entered Postal codes.</p>
+                                        </div>
+                                        <input type="text" placeholder="Select product" class="form_txt">                                
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <label>Postal Code</label>                                      
+                                       <input type="number" placeholder="Enter postal code" class="form_txt">                                 
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <div class="label_info">
+                                            <label>Date/Time</label>
+                                            <div class="info_img">
+                                                <img src="images/green_info.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="seasonal_heading">
+                                            <p>Above selected products will be available for booking till the date/time Mentioned below.</p>
+                                        </div>  
+                                        <div class="select_range">
+                                            <div class="select_date">
+                                                <input type="text" id="from" name="from" class="form_txt date_text" placeholder="Select">
+                                                <select class="checkout_select_dropdown block_select1">
+                                                    <option value="0">00:00 </option>
+                                                    <option value="1">12:00</option>
+                                                    <option value="2">01:00</option>
+                                                    <option value="3">02:00</option>
+                                                </select>
+                                                <select class="checkout_select_dropdown block_select2">
+                                                    <option>AM</option>
+                                                    <option>PM</option>                                              
+                                                </select>
+                                            </div>
+                                            <label for="to" class="date_pick">To</label>
+                                            <div class="select_date">
+                                                <input type="text" id="to" name="to" class="form_txt date_text" placeholder="Select">
+                                                <select class="checkout_select_dropdown block_select1">
+                                                    <option value="0">00:00 </option>
+                                                    <option value="1">12:00</option>
+                                                    <option value="2">01:00</option>
+                                                    <option value="3">02:00</option>
+
+                                                </select>
+                                                <select class="checkout_select_dropdown block_select2">
+                                                    <option>AM</option>
+                                                    <option>PM</option>                                              
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_col form_col_btn">
+                                        <div class="book_rightbtns">
+                                            <input type="reset" class="reset_btn" value="CANCEL">
+                                            <button class="search_btn">Create Booking</button>    
+                                        </div>   
+                                    </div>
+                                </div>
+                            </form>
+                        </div>                   
+                    </div>                 
+                </div>
+            </div>
+        </div>
+        <div id="modalone" class="modal">
+            <div class="popup_section">
+                <div class="custom_container">
+                    <div class="popup_content">
+                        <div class="popup_form">
+                            <div class="filter">
+                                <h5>Extend Booking</h5>
+                            </div>
+                            <a href="javascript:void(0);" class="popup_close "></a>
+                            <form>
+                                <div class="text_popup">
+                                    <p>Enter how long you'd like to extend each booking item. Please note that lag time is 
+                                        automatically added to the finish date.</p>
+                                    <span>Oasis Halter Dress</span>
+                                    <ul class="book_list">                                    
+                                        <li>8</li>
+                                        <li>Burgundy</li>
+                                        <li>4-Day</li>
+                                    </ul>
+                                </div> 
+                                <div class="leadlag_btn">                                 
+                                    <div class="form_row">
+                                        <div class="form_col quantity_btn">
+                                            <div class="lag_period1">
+                                                <label class="lag_time">Day(s)</label>
+                                                <div class="quantity_no"><input type="number" class="form_txt"></div>
+                                            </div>                             
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="form_col_btn">
+                                    <input type="reset" class="reset_btn" value="CANCEL">
+                                    <button class="search_btn">Extend</button>        
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/moment.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </body>
+</html>

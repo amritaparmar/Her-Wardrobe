@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>addbackup_product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="css/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+        <!--        <link href="css/fullcalendar.print.min.css" rel="stylesheet" type="text/css"/>-->
+        <link href="css/ionicons.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <a data-modal="#modalone" class="add_product popup_btn" href="#">Add Backup Product</a> 
+        <div id="modalone" class="modal">
+            <div class="popup_section">
+                <div class="custom_container">
+                    <div class="popup_content popup_addproduct">
+                        <div class="popup_form">
+                            <div class="filter">
+                                <h5>Add Backup Product</h5>
+                            </div>
+                            <a href="javascript:void(0);" class="popup_close "></a>
+                            <form>                 
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <label>Collection</label> 
+                                        <select class="checkout_select_dropdown">
+                                            <option value="0">Select collection </option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>                       
+                                        </select> 
+                                    </div>                                   
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_col">
+                                        <label>Product Name</label> 
+                                        <select class="checkout_select_dropdown">
+                                            <option value="0">Select product</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>                                          
+                                        </select> 
+                                    </div>
+                                </div>
+                                <div class="form_col_btn">
+                                    <input type="reset" class="reset_btn" value="CANCEL">
+                                    <button class="search_btn">ADD</button>        
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/moment.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </body>
+</html>
